@@ -1,0 +1,384 @@
+* html,* html body{background-image:url(about:blank);background-attachment:fixed}	/*设置背景不随着滚动滚动*/
+
+
+body {
+	padding:0 0;
+	margin:0 0;
+	color:#333;
+	font:12px/20px "SimSun","宋体","Arial Narrow",HELVETICA;
+	background-color: #fff;
+}
+
+div {
+	display:block;
+}
+/*第一层开始*/
+.top-nav-wrap {
+	width:100%;	/*宽度100%，随着浏览器的宽度改变*/
+	min-width:1000px;	/*最小宽度*/
+	z-index:9999;	/*不知道*/
+	position:absolute;	/*开启绝对定位*/
+	top:0;	/*开启绝对定位后，top和left分别向块元素的最上角顶*/
+	left:0
+}
+.top-nav-wrap-fix{
+	position:fixed;	/*绝对定位，相对浏览器定位*/
+	top:0;
+	_position:absolute;	/*属性前加下划线代表：兼容IE6*/
+	_top:expression(eval(document.documentElement.scrollTop));
+	left:0;
+}
+/*第一层结束*/
+/*第二层开始*/
+.top-nav {
+	height:41px;	/*第二层高度为41像素*/
+	border-top:3px solid #ff8500;	/*顶部有个3像素的实线*/
+	border-bottom:1px solid #edeef0;	/*底部有个1像素的实线*/
+	background-color:#fcfcfc
+}
+/*第二层结束*/
+/*第三层开始*/
+.top-nav .tn-bg{	/*子元素选择器*/
+	height:41px;
+}
+/*第三层结束*/
+/*第四层开始*/
+.top-nav .tn-header{
+	width:1000px;
+	margin:0 auto;
+	position:relative;
+	font-family:"Microsoft YaHei","微软雅黑","SimSun","宋体";
+}
+/*第四层结束*/
+/*第五层开始*/
+.top-nav .tn-nav{
+	float:left;
+	_display:inline;
+}
+/*第五层结束*/
+/*导航栏左侧开始*/
+.top-nav .tn-title{
+	float:left;
+	font-size:12px;
+	position:relative;
+}
+/*导航栏左侧结束*/
+.top-nav .tn-title .tn-tab{
+	border:1px solid #fcfcfc;
+	border-width:0 1px;
+	color:#4c4c4c;
+	display:inline-block;
+	line-height:16px;
+	cursor:pointer;
+	position:relative;
+	z-index:9999;
+	padding:0 2px 0 0;
+}
+
+.top-nav .tn-title .tn-tab i {
+	display:inline-block;
+	height:17px;
+	padding:12px 9px 12px 16px;
+	vertical-align:bottom;	/*水平底层对齐*/
+	_overflow:hidden;
+}
+
+.top-nav .tn-title .tn-tab:hover {
+	border-color:#edeef0;
+	background-color:#edeef0;
+	text-decoration:none;
+	color:#ff8400；
+}
+
+.top-nav .tn-new{
+	position:absolute;
+	margin:-10px 0 0 0;
+	display:none;
+}
+
+.tn-topmenulist {
+	position:absolute;
+	border:1px solid #333;
+	background:#fff;
+	z-index:9998;
+	font-size:12px;
+}
+.tn-topmenulist{
+	color:#333;
+}
+.tn-topmenulist a{
+	color:#0a8cd2;
+}
+
+.tn-topmenulist .tn-text-list{
+	border-bottom:1px solid #fecc5b;
+	margin-bottom:-2px;
+}
+.tn-topmenulist .tn-text-list li{
+	line-height:31px;
+	border-bottom:1px solid #fecc5b;
+}
+
+.tn-topmenulist .tn-text-list li a{
+	_zoom:1;
+	display:block;
+	color:#333;
+	padding:0 15px;
+}
+
+.tn-topmenulist .tn-text-list li a:hover{
+	color:#e67902;
+	background:#fff5da;
+	text-decoration:none;
+}
+
+.tn-topmenulist .tn-text-list li em{
+	color:#de1f26;
+	float:right;
+}
+
+.tn-topmenulist-a{
+	border:1px solid #ebbe7a;
+	border-top:0;
+	overflow:hidden;
+	-moz-box-shadow:3px 3px 3px rgba(0,0,0,.1);
+	-webkit-box-shadow:3px 3px 3px rgba(0,0,0,.1);
+	box-shadow:3px 3px 3px rgba(0,0,0,.1);
+	top:41px;
+	left:0;
+}
+
+.tn-topmenulist-a-client{
+	width:112px;
+}
+/*
+a {
+	text-decoration: none;	
+}
+
+a.visited {
+	color:#666;
+}
+
+i {
+	font-style:normal;
+	display:inline-block;
+	height: 17px;
+	padding:12px 9px 12px 16px;
+	vertical-align: bottom;	
+}
+
+.tn-text-list {
+	border-bottom:1px solid #fecc5b;
+	margin-bottom:-2px;
+}
+
+ul {
+	margin:0;
+	padding:0;
+}
+
+li {
+	margin:0;
+	padding:0;
+	display:list-item;
+	line-height:31px;
+	border-bottom:1px solid #fecc5b;
+	list-style:none;
+}
+
+.tn-topmenulist-a-client {
+	width:112px;
+}
+
+.tn-topmenulist-a {
+	border:1px solid #ebbe7a;
+	border-top:0;
+	overflow:hidden;
+	box-shadow:3px 3px 3px 3px rgba(0,0,0,.1);
+	top:41px;
+	left:0;
+}
+
+.tn-topmenulist {
+	color:#333;
+	position:absolute;
+	background:#fff;
+	z-index:9998;
+	font-size:12px;
+}*/
+body,.top-nav,.top-nav dl,.top-nav dt,.top-nav dd,.top-nav ul,.top-nav ol,.top-nav li,.top-nav p,.top-nav form,.top-nav input,.top-nav textarea{
+	margin:0;
+	padding:0;
+}
+
+.top-nav li{
+	list-style:none;
+}
+
+.top-nav img{
+	border:0;
+}
+
+.top-nav a:focus{
+	outline-style:none;
+}
+
+.top-nav em,.top-nav i {
+	font-style:normal;
+	font-weight:normal;
+}
+
+.top-nav a {
+	color:#ff8400;
+	text-decoration:none;
+}
+
+.top-nav a:hover{
+	text-decoration:underline;
+}
+
+.top-nav .tn-new{
+	background:url(../img/icon.png) 0 -1539px no-repeat;
+	width:17px;
+	height:13px;
+}
+
+.top-nav .tn-arrow {
+	display:inline-block;
+	width:8px;
+	height:5px;
+	margin:0 0 0 5px;
+	overflow:hidden;
+	vertical-align:middle;
+	font-size:12px;
+	line-height:13px;
+	-webkit-transform:none;
+	-moz-transform:none;
+	-o-transform:none;
+	background:url(../img/icon.png) 0 -977px no-repeat;
+}
+
+.tn-close{
+	float:right;
+	height:21px;
+	margin:8px 0 0 3px;
+	line-height:21px;
+	_line-height:22px;
+	width:54px;
+	height:21px;
+	overflow:hidden;
+	border:1px solid #e2e2e2;
+	font-size:12px;
+}
+
+.tn-close a{
+	display:block;
+	height:21px;
+}
+
+.tn-close a:link,.tn-close a:visited {
+	color:#a7a5a0;
+	text-decoration:none;
+}
+
+.tn-close a:hover,.tn-close a:active {
+	color:#938f8f;
+	text-decoration:none;
+}
+
+.tn-close i{
+	float:left;
+	display:inline;
+	width:17px;
+	height:17px;
+	margin:2px 5px 0 2px;
+	_margin-right:3px;
+	overflow:hidden;
+	background:url(../img/icon.png) 3px -994px no-repeat #bebcbc;
+	_zoom:1;
+}
+
+.tn-close a:hover i {
+	background-color:#938f8f;
+}
+
+.tn-person-r .tn-title .tn-tab i, .tn-person-r .tn-user i {
+    display: inline-block;
+    height: 17px;
+    padding: 12px 15px 12px 18px;
+    vertical-align: bottom;
+    _overflow: hidden;
+    font-style: normal;
+}
+/*
+.tn-close {
+	float:right;
+	margin:8px 0 0 3px;
+	line-height: 21px;
+	width: 54px;
+	height:21px;
+	overflow:hidden;	
+	border:1px solid #e2e2e2;
+	font-size:12px;
+}
+
+.tn-close a:link,.tn-close a:visited {
+	color:#a7a5a9;
+	text-decoration:none;
+}
+
+.tn-close a {
+	display:block;
+	height: 21px;
+}
+
+a:visited {
+	color:#666;
+}
+
+.tn-close i {
+	float:left;
+	display:inline-block;
+	width:17px;
+	height:17px;
+	margin:2px 5px 0 2px;
+	overflow:hidden;
+	background-color: 
+}
+
+//i0.sinaimg.cn/home/main/index2013/0403/icon.png
+
+.tn-person-r {
+	float:right;
+}
+
+.tn-person-r .tn-title {
+	float:left;
+	position:relative;
+	font-size:12px;
+}
+
+.tn-person-r .tn-title .tn-tab {
+	border:1px solid #fcfcfc;
+	border-width:0 1px;
+	color:#4c4c4c;
+	display:inline-block;
+	line-height:16px;
+	cursor:pointer;	
+	position:relative;
+	padding:0 2px 0 0;
+	z-index:9999;
+	text-decoration:none;
+}
+
+.tn-person-r .tn-title .tn-tab i {
+	display:inline-block;
+	height:17px;
+	padding:12px 15px 12px 18px;
+}
+
+.tn-person-r i {
+	font-weight:normal;
+}
+*/
